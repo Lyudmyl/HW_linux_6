@@ -1,0 +1,13 @@
+sh-4.4$ mkdir folder                                                                                                                                                                                                                               
+sh-4.4$ cd folder                                                                                                                                    
+sh-4.4$ touch date_{A..F}                                                                                                                          
+sh-4.4$ date                                                                                                                                       
+sh-4.4$ date > date_A                                                                                                                              
+sh-4.4$ date > date_B                                                                                                                              
+sh-4.4$ date > date_C 
+sh-4.4$ date > date_D                                                                                                                             
+sh-4.4$ date > date_E                                                                                                                              
+sh-4.4$ date > date_F   
+sh-4.4$ date > date_A | date > date_B | date > date_C | date > date_D | date > date_E | date > date_F 
+sh-4.4$ find "2017" date_* | wc -w                                                                                                                 
+sh-4.4$ rm -rf date_*  
